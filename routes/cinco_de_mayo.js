@@ -5,7 +5,7 @@ var router = express.Router();
 var metadata = {
   Name: "Cinco De Mayo",
   FederalHoliday: false,
-  Religion: "", //could be "Christian", "Jewish", "Orthodox", "Muslim", "Hindu" or undefined
+  Religion: undefined, //could be "Christian", "Jewish", "Orthodox", "Muslim", "Hindu" or undefined
   AlternateNames: [] //may contain alternate names for the holiday - for example for Mardi Gras, altername names would be ["Fat Tuesday", "Shrove Tuesday"]
 };
 
