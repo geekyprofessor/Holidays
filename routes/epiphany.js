@@ -5,7 +5,7 @@ var router = express.Router();
 var metadata = {
   Name: "Epiphany",
   FederalHoliday: false,
-  Religion: undefined, //could be "Christian", "Jewish", "Orthodox", "Muslim", "Hindu" or undefined
+  Religion: "Christian", //could be "Christian", "Jewish", "Orthodox", "Muslim", "Hindu" or undefined
   AlternateNames: ["Three Kings Day" ] //may contain alternate names for the holiday - for example for Mardi Gras, altername names would be ["Fat Tuesday", "Shrove Tuesday"]
 };
 
