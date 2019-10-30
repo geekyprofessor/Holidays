@@ -6,12 +6,17 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "auto-load": "^3.0.4",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
+    "hebcal": "^2.3.2",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
+    "moment": "^2.24.0",
+    "moment-hijri": "^2.1.2",
+    "moment-lunar": "0.0.4",
     "morgan": "~1.9.1",
-    "auto-load": "^3.0.4"
+    "nepali-calendar-js": "^1.0.4"
   }
 }
