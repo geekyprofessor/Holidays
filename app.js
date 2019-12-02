@@ -27,6 +27,8 @@ for(var _routeName in availableRoutes){
   app.use('/'+_routeName, availableRoutes[_routeName]); 
 }
 
+app.response.locals = { availableRoutes : availableRoutes };
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
