@@ -4,8 +4,8 @@ var moment = require('moment');
 
 //set holiday metadate here
 var metadata = {
-  Name: "Columbus Day",
-  FederalHoliday: true,
+  Name: "Arbor Day",
+  FederalHoliday: false,
   Religion: undefined, //could be "Christian", "Jewish", "Orthodox", "Muslim", "Hindu" or undefined
   AlternateNames: [] //may contain alternate names for the holiday - for example for Mardi Gras, altername names would be ["Fat Tuesday", "Shrove Tuesday"]
 };
@@ -17,10 +17,10 @@ router.get('/', function(req, res, next){
 
 router.get('/:year', function(req, res, next) {
   //calculate holiday date here
-  var date = moment(new Date(req.params.year, 9, 1)); //set date to 1st of November
+  var date = moment(new Date(req.params.year, 3, 1)); //set date to 26th of April
   //Target Thursday on 4th Week
-  var weekOfMonth = 2;	// 4th Week 
-  var dayOfWeek = 1;	// Thursday
+  var weekOfMonth = 4;	// 4th Week 
+  var dayOfWeek = 5;	// Friday
       
   var first = date.day() <= dayOfWeek ? date.day(dayOfWeek) : date.add(1,"weeks").day(dayOfWeek); //Find first dayOfWeek in month
   var dt = first.add(weekOfMonth - 1, "weeks").toDate();  //skip forward weekOfMonth - 1 weeks 
